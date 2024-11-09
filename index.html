@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krushna Gour's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Krushna Gour</h1>
+        <p>Web Developer</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Detail-oriented and motivated web developer with a solid foundation in JavaScript, HTML, CSS, and React.js. Proven experience through internship in web development, demonstrating ability to build responsive and efficient web applications. Eager to contribute to dynamic development teams and grow technical skills.</p>
+        <h3>Skills</h3>
+        <ul class="skills">
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>React.js</li>
+            <li>Material UI</li>
+            <li>Bootstrap</li>
+            <li>SQL (MySQL)</li>
+            <li>MongoDB</li>
+            <li>Git & GitHub</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Weather Widget</h3>
+            <p>Created a web application using React.js to display real-time weather data via API integration.</p>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Designed and developed a personal portfolio website to showcase my skills and projects.</p>
+        </div>
+        <div class="project">
+            <h3>Todo List App</h3>
+            <p>Built a Todo List application using Vanilla JavaScript for task management.</p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Web Development Intern</h3>
+        <p>Next24tech Technology & Services (August 2024 – October 2024)</p>
+        <ul>
+            <li>Developed web applications using HTML, CSS, and JavaScript.</li>
+            <li>Collaborated with team members to implement responsive design and enhance user experience.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email or connect with me on social media!</p>
+        <p>Email: <a href="mailto:krushnagour@example.com">krushnagour@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/krushnagour" target="_blank">linkedin.com/in/krushnagour</a></p>
+        <p>GitHub: <a href="https://github.com/krushnagour" target="_blank">github.com/krushnagour</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Krushna Gour. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
